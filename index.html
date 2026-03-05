@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POSTECH - FULLSTACK</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <h1>POSTECH - FULLSTACK</h1>
+        <p>Desafio aula inaugural</p>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="card">
+        <h2 class="card__title">Informações do grupo</h2>
+        <div class="divider"></div>
+
+        <form id="groupForm" class="form" novalidate>
+          <div class="field">
+            <label for="name1">Nome</label>
+            <input id="name1" name="name1" type="text" placeholder="" />
+            <small class="error" data-error-for="name1"></small>
+          </div>
+
+          <div class="field">
+            <label for="name2">Nome</label>
+            <input id="name2" name="name2" type="text" placeholder="" />
+            <small class="error" data-error-for="name2"></small>
+          </div>
+
+          <div class="field">
+            <label for="name3">Nome</label>
+            <input id="name3" name="name3" type="text" placeholder="" />
+            <small class="error" data-error-for="name3"></small>
+          </div>
+
+          <div class="field">
+            <label for="name4">Nome</label>
+            <input id="name4" name="name4" type="text" placeholder="" />
+            <small class="error" data-error-for="name4"></small>
+          </div>
+
+          <div class="field">
+            <label for="name5">Nome</label>
+            <input id="name5" name="name5" type="text" placeholder="" />
+            <small class="error" data-error-for="name5"></small>
+          </div>
+
+          <div class="field">
+            <label for="history">História do grupo</label>
+            <textarea id="history" name="history" placeholder=""></textarea>
+            <small class="error" data-error-for="history"></small>
+          </div>
+
+          <div class="footer">
+            <button class="btn" type="submit">Enviar</button>
+            <p id="success" class="success" aria-live="polite"></p>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+    <script src="script.js"></script>

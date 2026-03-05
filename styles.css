@@ -1,0 +1,143 @@
+:root{
+  --bg: #ececec;
+  --header: #0f0f12;
+  --card: #ffffff;
+  --muted: #8a8a96;
+  --border: #e6e6ef;
+  --input-bg: #fbfbfe;
+  --accent: #d62828;
+  --text: #1b1b1f;
+  --purple: #4b2ea6;
+}
+
+* { box-sizing: border-box; }
+
+body{
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Top dark header */
+.header{
+  background: var(--header);
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 16px;
+}
+.header__content h1{
+  margin: 0;
+  color: #fff;
+  letter-spacing: .6px;
+  font-size: 26px;
+  font-weight: 800;
+}
+.header__content p{
+  margin: 8px 0 0;
+  color: #cfcfd7;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Center card */
+.wrap{
+  max-width: 780px;
+  margin: -70px auto 70px;
+  padding: 0 16px;
+}
+
+.card{
+  background: var(--card);
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  padding: 28px 28px 24px;
+}
+
+.card__title{
+  margin: 0 0 14px;
+  color: var(--purple);
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.divider{
+  height: 1px;
+  background: var(--border);
+  margin: 0 0 18px;
+}
+
+/* Form */
+.form{
+  display: grid;
+  gap: 16px;
+}
+
+.field label{
+  display: block;
+  font-size: 11px;
+  color: #7e7e88;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.field input,
+.field textarea{
+  width: 100%;
+  border: 1px solid var(--border);
+  background: var(--input-bg);
+  border-radius: 4px;
+  padding: 12px 12px;
+  outline: none;
+  font-size: 14px;
+}
+
+.field textarea{
+  min-height: 120px;
+  resize: vertical;
+}
+
+.field input:focus,
+.field textarea:focus{
+  border-color: #c9c9ff;
+  box-shadow: 0 0 0 3px rgba(110, 80, 220, .12);
+}
+
+.error{
+  display: block;
+  min-height: 16px;
+  margin-top: 6px;
+  color: #b00020;
+  font-size: 12px;
+}
+
+.footer{
+  background: #f4f4f7;
+  border-top: 1px solid var(--border);
+  padding: 22px 28px;
+  margin: 22px -28px -24px;
+}
+
+.btn{
+  width: 100%;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 6px;
+  padding: 14px 16px;
+  font-weight: 800;
+  letter-spacing: .3px;
+  cursor: pointer;
+}
+.btn:hover{ filter: brightness(.95); }
+.btn:active{ transform: translateY(1px); }
+
+.success{
+  margin: 10px 0 0;
+  font-size: 13px;
+  color: #1b7a2a;
+  font-weight: 700;
+}
